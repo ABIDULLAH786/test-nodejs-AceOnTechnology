@@ -31,15 +31,15 @@ To get started with the application, follow these steps:
 
 The following API endpoints are available:
 
-`POST users/` - create new user.
+`GET users/` - Returns a JSON array of user objects. You can hardcode an array of user objects in the script.
 
-`GET users/` - Get all users.
+`GET users/:id` - Returns a JSON object of a user with the specified ID. If the user doesn't exist, return a 404 status code.
 
-`GET users/:id` - Retrieves single user profile from.
+`POST users/` - Creates a new user. The request body should contain a JSON object with the user's data. Return the created user object with a 201 status code.
 
-`PUT users/:id` - Updates an existing user.
+`PUT users/:id` - Updates an existing user with the specified ID. The request body should contain a JSON object with the updated user's data. If the user doesn't exist, return a 404 status code.
 
-`DELETE users/:id` - Deletes a user.
+`DELETE users/:id` - Deletes an existing user with the specified ID. If the user doesn't exist, return a 404 status code. Return a 204 status code if the user is successfully deleted.
 
 <br>
 
