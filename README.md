@@ -31,15 +31,15 @@ To get started with the application, follow these steps:
 
 The following API endpoints are available:
 
-POST /api/v1/users/: create new user.
+`POST /api/v1/users/` - create new user.
 
-GET /api/v1/users/: Get all users.
+`GET /api/v1/users/` - Get all users.
 
-GET /api/v1/users/:id: Retrieves single user profile from.
+`GET /api/v1/users/:id` - Retrieves single user profile from.
 
-PUT /api/v1/users/:id: Updates an existing user.
+`PUT /api/v1/users/:id` - Updates an existing user.
 
-DELETE /api/v1/users/:id: Deletes a user from the database.
+`DELETE /api/v1/users/:id` - Deletes a user.
 
 <br>
 
