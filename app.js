@@ -12,6 +12,7 @@ app.use(express.json())
  */
 const userRoutes = require("./routes/userRoutes")
 app.use(userRoutes)
+app.use(require("./routes/readFileRoute"))
 
 // welcom message
 app.get("/", (req, res) => {
